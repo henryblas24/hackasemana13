@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+ .contenedor-card {
+    display: flex;
+ }
+
+.card {
+  
+    width: 250px;
+    height: 250px;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
