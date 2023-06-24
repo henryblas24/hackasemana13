@@ -5,15 +5,46 @@
 }
  .contenedor-card {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
  }
 
 .card {
-  
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    border: 1px solid black;
 }
 
 img {
     width: 100%;
+   
+}
+.card-img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.icono {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.icono img {
+    width: 35px;
+    
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }

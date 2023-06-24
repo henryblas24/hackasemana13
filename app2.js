@@ -70,6 +70,10 @@ const contenedorCard = document.querySelector(".contenedor-card")
 const cards=dogs.map((card)=> 
 `
 <div class="card">
+	<div class="icono" >
+		<img class="editar" src="https://static.vecteezy.com/system/resources/previews/006/827/458/non_2x/edit-premium-icon-sign-symbol-vector.jpg " alt="">  
+		<img class="delete" src="https://cdn.icon-icons.com/icons2/3241/PNG/512/x_delete_trash_remove_cancel_icon_197533.png " alt="">  
+	</div>
 	<div class="card-img">
 		<img src=${card.img} alt="">  
 	</div>
@@ -80,9 +84,17 @@ const cards=dogs.map((card)=>
 </div> 
 `
 )
-console.log(cards)
+//console.log(cards)
 
 contenedorCard.innerHTML=cards
-
-
-
+//console.log(contenedorCard)
+const deleteCard = document.querySelector('.delete').classList.value
+//console.log(deleteCard)
+contenedorCard.addEventListener('click',(e)=> {
+	
+	if (e.target.classList.value==deleteCard) {
+		console.log(e.target.parentElement.parentElement)
+		e.target.parentElement.parentElement.remove()
+		}	
+	} 
+)
